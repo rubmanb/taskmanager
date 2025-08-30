@@ -115,3 +115,36 @@ Crear contenedores con Docker para backend, frontend y PostgreSQL.
 
 📜 Licencia
 Este proyecto es de uso libre para fines educativos y demostrativos. 🚀
+
+### 🏢 Arquitectura MVC
+
+## 1. Estructura archivos
+
+```bash
+gestor-tareas-backend/
+ └── src/main/java/com/ruben/springboot/taskmanager
+      ├── controller/        # Controladores REST
+      │    └── TareaController.java
+      │
+      ├── dto/               # Objetos de transferencia
+      │    └── TareaDTO.java
+      │
+      ├── entity/            # Entidades JPA
+      │    └── Tarea.java
+      │
+      ├── repository/        # Acceso a BD
+      │    └── TareaRepository.java
+      │
+      ├── service/           # Lógica de negocio
+      │    ├── TareaService.java
+      │    └── impl/TareaServiceImpl.java
+      │
+      ├── exception/         # Manejo de errores
+      │    ├── GlobalExceptionHandler.java
+      │    └── RecursoNoEncontradoException.java
+      │
+      ├── config/            # Configuraciones extra (Swagger, Security, etc.)
+      │    └── SwaggerConfig.java
+      │
+      └── GestorTareasApplication.java   # Clase principal
+```
