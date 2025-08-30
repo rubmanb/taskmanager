@@ -25,7 +25,7 @@ La aplicación permite crear, actualizar, listar y eliminar tareas, funcionando 
 ---
 
 ## 📂 Estructura del proyecto
-
+```
 taskmanager/
 ├── backend/ # Proyecto Spring Boot (API REST)
 │ ├── src/main/java/com/miapp/taskmanager
@@ -34,6 +34,7 @@ taskmanager/
 └── frontend/ # Proyecto Angular
 ├── src/
 └── package.json
+```
 ---
 
 ## ⚙️ Configuración del Backend
